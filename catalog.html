@@ -10,7 +10,7 @@
     <nav class="product-navigation">
       <ul>
         <li>
-          <a href="#">Barbershop</a>
+          <a href="index.html"><img src="http://placehold.it/150x100"></a>
         </li>
         <li>
           <a href="#">Информация</a>
@@ -22,7 +22,7 @@
           <a href="#">Прайс-лист</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a>Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
@@ -46,62 +46,58 @@
         <a href="#">Магазин</a>
       </li>
       <li>
-        <a href="#">Средства для ухода</a>
+        <a>Средства для ухода</a>
       </li>
     </ul>
   </div>
 
   <div class="sorter">
-    <form action="#" method="get">
+    <form action="https://echo.htmlacademy.ru" method="get">
 
       <fieldset>
         <legend>Производители</legend>
 
-        <input type="checkbox" name="baxter-of-california" id="baxter" checked>
+        <input type="checkbox" name="baxter" id="baxter" checked>
         <label for="baxter">Baxter of California</label>
 
-        <input type="checkbox" name="Mr natty" id="mr-natty">
-        <label for="mr-natty">Mr Natty</label>
+        <input type="checkbox" name="natty" id="mrnatty">
+        <label for="mrnatty">Mr Natty</label>
 
-        <input type="checkbox" name="Suavecito" id="suavecito" checked>
+        <input type="checkbox" name="suavecito" id="suavecito" checked>
         <label for="suavecito">Suavecito</label>
 
-        <input type="checkbox" name="Malin+Goetz" id="malin+goetz">
-        <label for="malin+goetz">Malin+Goetz</label>
+        <input type="checkbox" name="malin" id="malin-goetz">
+        <label for="malin-goetz">Malin+Goetz</label>
 
-        <input type="checkbox" name="Murray's" id="murray's">
-        <label for="murray's">Murray's</label>
+        <input type="checkbox" name="murrays" id="murrays">
+        <label for="murrays">Murray's</label>
 
-        <input type="checkbox" name="American Crew" id="american-crew" checked>
+        <input type="checkbox" name="american" id="american-crew" checked>
         <label for="american-crew">American Crew</label>
       </fieldset>
 
       <fieldset>
         <legend>Группы товаров</legend>
 
-        <input type="radio" name="Shaving accessories" id="shaving-accessories" value="product-groups">
+        <input type="radio" name="group" id="shaving-accessories" value="shaving">
         <label for="shaving-accessories">Бритвенные приндлежности</label>
 
-        <input type="radio" name="Care products" id="сare-products" value="product-groups" checked>
+        <input type="radio" name="group" id="сare-products" value="care" checked>
         <label for="сare-products">Средства для ухода</label>
 
-        <input type="radio" name="Accessories" id="accessories" value="product-groups">
+        <input type="radio" name="group" id="accessories" value="accessor">
         <label for="accessories">Аксессуары</label>
 
       </fieldset>
-      <input type="submit" name="show" value="Показать">
+      <button type="submit">Показать</button>
     </form>
   </div>
 
   <section class="card-container">
     <article class="card1">
-      <div>
-        <a href="#"><img src="http://placehold.it/150x100"></a>
-      </div>
-      <div>
-        <a href="#">Набор для путешестий "Baxter of California"</a>
-      </div>
-      <div>2 900 руб.</div>
+      <a href="#"><img src="http://placehold.it/150x100"></a>
+      <a href="#"><h2>Набор для путешестий "Baxter of California"</h2></a>
+      <span>2 900 руб.</span>
       <a href="#">Купить</a>
     </article>
 
@@ -112,7 +108,7 @@
       <div>
         <a href="#">Увлажняющий кондиционер "Baxter of California"</a>
       </div>
-      <div>750 руб.</div>
+      <span>750 руб.</span>
       <a href="#">Купить</a>
     </article>
 
@@ -123,7 +119,7 @@
       <div>
         <a href="#">Гель для волос "Suavecito"</a>
       </div>
-      <div>290 руб.</div>
+      <span>290 руб.</span>
       <a href="#">Купить</a>
     </article>
 
@@ -134,7 +130,7 @@
       <div>
         <a href="#">Глина для укладки волос "American Crew"</a>
       </div>
-      <div>500 руб.</div>
+      <span>500 руб.</span>
       <a href="#">Купить</a>
     </article>
 
@@ -145,7 +141,7 @@
       <div>
         <a href="#">Гель для волос "American Crew"</a>
       </div>
-      <div>300 руб.</div>
+      <span>300 руб.</span>
       <a href="#">Купить</a>
     </article>
 
@@ -156,18 +152,18 @@
       <div>
         <a href="#">Набор для бритья "Baxter of California"</a>
       </div>
-      <div>3 900 руб.</div>
+      <span>3 900 руб.</span>
       <a href="#">Купить</a>
     </article>
   </section>
 
-  <nav class="pegination">
+  <nav class="pagination">
     <ul>
       <li>
         <a href="#">1</a>
       </li>
       <li>
-        <a href="#">2</a>
+        <a>2</a>
       </li>
       <li>
         <a href="#">3</a>
@@ -180,7 +176,7 @@
 </main>
 
 <footer class="product-footer">
-  <div class="conteiner">
+  <div class="container">
     <section class="footer-contacts">
       Барбершоп "Бородинский"<br>
       Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
@@ -196,7 +192,6 @@
     <section class="copyright">
       <p>Разработано:</p>
       <a class="bth" href="https://htmlacademy.ru">HTML Academy</a>
-
     </section>
   </div>
 </footer>
