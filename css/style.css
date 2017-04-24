@@ -1,12 +1,11 @@
 html,
 body {
-  min-width: 1122px;
-  min-height: 1750px;
   margin: 0;
   padding: 0;
 }
 
 body {
+  background: url(../img/barbershop-background.jpg);
   font-style: normal;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -14,12 +13,27 @@ body {
   line-height: 24px;
   color: #000;
   text-transform: uppercase;
-  background: url(../img/barbershop-background.jpg);
+}
+
+a {
+  text-decoration: none;
 }
 
 .caption1 {
   font-size: 30px;
   line-height: 42px;
+  margin-left: -23px;
+}
+
+.caption2 {
+  line-height: 18px;
+  text-transform: none;
+}
+
+.name-product {
+  display: block;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .item-caption2 {
@@ -39,15 +53,20 @@ body {
 }
 
 .product-navigation {
-  width: 780px;
   float: left;
+  width: 780px;
   height: 72px;
 }
 
 .user-block {
-  width: 140px;
   float: right;
+  width: 140px;
   height: 72px;
+}
+
+.product-navigation ul,
+.product-navigation ul li {
+  display: inline-block;
 }
 
 .clearfix::after {
@@ -57,10 +76,10 @@ body {
 }
 
 .product-footer {
+  background: url(../img/footer-background.jpg);
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url(../img/footer-background.jpg);
 }
 
 .footer-contacts {
@@ -80,4 +99,72 @@ body {
   float: right;
   width: 180px;
   min-height: 90px;
+}
+
+.caption ul,
+.caption ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+label {
+  line-height: 18px;
+}
+
+.sorter-checkbox {
+  display: block;
+  margin-top: 18px;
+}
+
+.sorter1 {
+  width: 173px;
+  height: 260px;
+  border: none;
+  margin-bottom: 39px;
+}
+
+.sorter2 {
+  width: 173px;
+  height: 168px;
+  border: none;
+}
+
+.sorter {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-container {
+  display: inline-block;
+  width: 706px;
+  height: 594px;
+}
+
+article {
+  display: inline-block;
+  background-color: white;
+  width: 220px;
+  height: 286px;
+  margin-bottom: 20px;
+}
+
+.card:nth-child(3n-1) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.pagination {
+  clear: both;
+  margin-left: 186px;
+}
+
+.pagination ul,
+.pagination ul, li {
+  display: inline-block;
+  padding-left: 7px;
 }
