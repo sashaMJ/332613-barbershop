@@ -19,7 +19,7 @@ body {
 
 .product-header {
   background-color: black;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -61,15 +61,16 @@ a {
 .caption1 {
   font-size: 30px;
   line-height: 42px;
-  margin-top: -11px;
 }
 
-.caption ul,
+.caption ul {
+  margin-bottom: 40px;
+}
+
 .caption ul li {
   display: inline-block;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 40px;
 }
 
 /* Сортировка */
@@ -78,7 +79,7 @@ a {
   display: inline-block;
   width: 220px;
   vertical-align: top;
-  margin-left: -16px;
+  padding-left: 0;
 }
 
 .sorter1 {
@@ -123,6 +124,7 @@ article {
 }
 
 .caption2 {
+  font-size: 14px;
   line-height: 18px;
   text-transform: none;
 }
@@ -143,17 +145,20 @@ article {
   margin-left: 186px;
 }
 
-.pagination ul,
-.pagination ul, li {
-  display: inline-block;
+.pagination li {
   padding-left: 7px;
+}
+
+.pagination ul {
+  display: inline-block;
 }
 
 /* Страница товара */
 
 .gallery {
   display: inline-block;
-  width: 466px;
+  width: 460px;
+  vertical-align: top;
 }
 
 .item-right-column {
