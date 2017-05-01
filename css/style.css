@@ -32,9 +32,18 @@ body {
   align-items: center;
 }
 
+.product-header li {
+  padding: 22px 22px;
+  margin-left: -9px;
+}
+
 .product-navigation ul,
 .product-navigation ul li {
   display: inline-block;
+}
+
+.product-navigation li:hover {
+  background-color: #242424;
 }
 
 .product-header a.active span {
@@ -59,6 +68,7 @@ body {
   float: right;
   padding-right: 62px;
   padding-top: 4px;
+  margin-right: 30px;
 }
 
 .user-block a::before {
@@ -92,11 +102,6 @@ body {
   opacity: 1;
 }
 
-.product-header li {
-  padding: 22px 1px;
-  margin-right: 34px;
-}
-
 /* Основное содержание страницы каталога */
 /* Навигация 2 */
 .caption {
@@ -124,7 +129,7 @@ body {
 
 .caption ul li {
   display: inline-block;
-  padding-right: 24px;
+  padding-right: 25px;
   position: relative;
 }
 
@@ -196,6 +201,10 @@ body {
   font-weight: bold;
   padding-left: 42px;
   position: relative;
+}
+
+.sorter label:hover {
+  color: #956537;
 }
 
 .sorter-checkbox {
@@ -297,6 +306,11 @@ a.bth-buy {
   margin-left: 15px;
 }
 
+.bth-buy:hover,
+button:hover {
+  background-color: #956537;
+}
+
 .card:nth-child(3n-1) {
   margin-right: 20px;
   margin-left: 20px;
@@ -331,6 +345,10 @@ a.bth-buy {
   color: black;
 }
 
+.pagination a:not(.active):hover {
+  background-color: #956537;
+}
+
 /* Страница товара */
 
 .gallery {
@@ -350,6 +368,7 @@ a.bth-buy {
 
 .product-footer {
   background: url(../img/footer-background.jpg);
+  box-shadow: inset 0px 15px 30px black;
   margin-top: 46px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -429,3 +448,24 @@ a.bth-buy {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.footer-copyright a:hover {
+  color: black;
+  background-color: white;
+}
+
+.social-bth-vk:hover {
+  background-color: white;
+  background-image: url(../img/v.hov.jpg);
+}
+
+.social-bth-fb:hover {
+  background-color: white;
+  background-image: url(../img/f.hov.jpg);
+}
+
+.social-bth-inst:hover {
+  background-color: white;
+  background-image: url(../img/insta.hov.jpg);
+}
+
