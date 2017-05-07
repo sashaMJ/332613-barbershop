@@ -253,7 +253,7 @@ body {
   height: 286px;
   margin-bottom: 24px;
   font-size: 14px;
-  box-shadow: 0 0 20px 0 rgba(193, 189, 189, 0.79)
+  box-shadow: 0 0 20px 0 rgba(193, 189, 189, 0.79);
 }
 
 .caption2 {
@@ -390,7 +390,6 @@ button:hover {
   background-color: #e5e5e5;
   border: none;
   cursor: pointer;
-
 }
 
 .bth-buy-item {
