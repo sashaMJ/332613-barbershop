@@ -236,10 +236,6 @@ body {
   background: url(../img/radio-checked.png);
 }
 
-/*.sorter-checkbox label:active::before {
-  background-image: url(../img/checkbox-checked.png);
-}*/
-
 /* Блок карточек товара */
 
 .card-container {
@@ -379,7 +375,7 @@ button:hover {
 
 .item-caption1 :last-child {
   margin-left: 175px;
-  color:#aba9a7;
+  color: #aba9a7;
 }
 
 .bth-price-item {
@@ -425,7 +421,7 @@ button:hover {
 }
 
 .composition ul {
-  padding: 10px 19px;
+  padding: 4px 21px;
 }
 
 .composition ul li {
@@ -436,7 +432,7 @@ button:hover {
 .composition li:after {
   content: "";
   position: absolute;
-  right: 372px;
+  right: 366px;
   top: 8px;
 
   width: 8px;
@@ -450,9 +446,9 @@ button:hover {
 
 .product-footer {
   background: url(../img/footer-background.jpg);
-  box-shadow: inset 0px 15px 30px black;
+  box-shadow: inset 0 15px 30px black;
   margin-top: 46px;
-  padding-top: 58px;
+  padding-top: 53px;
   padding-bottom: 40px;
   color: white;
 }
@@ -468,14 +464,14 @@ button:hover {
 .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 60px;
+  margin-right: 36px;
   margin-left: 4px;
   min-height: 90px;
 }
 
 .footer-social {
   float: left;
-  width: 180px;
+  width: 235px;
   text-align: center;
 }
 
@@ -538,16 +534,164 @@ button:hover {
 
 .social-bth-vk:hover {
   background-color: white;
-  background-image: url(../img/v.hov.jpg);
+  background-image: url(../img/v-hov.png);
 }
 
 .social-bth-fb:hover {
   background-color: white;
-  background-image: url(../img/f.hov.jpg);
+  background-image: url(../img/f-hov.png);
 }
 
 .social-bth-inst:hover {
   background-color: white;
-  background-image: url(../img/insta.hov.jpg);
+  background-image: url(../img/inst-hov.png);
 }
 
+/* Всплывающая форма */
+
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+
+  display: none;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: #000000;
+  background: #f8f3f0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+  background-repeat: no-repeat;
+  background-position: 100% -504px;
+}
+
+.login-form input.icon-password {
+  background-repeat: no-repeat;
+  background-position: 100% -45px;
+}
+
+.login-form .restore {
+  float: right;
+  color: #000000;
+}
+
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
